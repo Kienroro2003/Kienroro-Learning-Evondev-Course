@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="global.css">
+    <title>Background nested</title>
+    <style>
+        .bg-first{
+            background: url(./images/ilya-p-jgT1sy3UTxE-unsplash.jpg) no-repeat center -500px / cover;
+            height: 500px;
+        }
+        .bg-second{
+            background: linear-gradient(to bottom, #103432, #F19F55);
+            height: inherit;
+            opacity: 0.5;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="bg-first">
+        <div class="bg-second">
+            Kienroro
+        </div>
+    </div>
+  </body>
+</html>
