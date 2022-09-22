@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 3 - Exercise 5</title>
+    <style>
+      div[href^="https"] {
+        color: #39dbb2;
+      }
+
+      div[data-link$=".vn"] {
+        color: #eb344f;
+      }
+
+      div[data-link*="hello"] {
+        color: #f7ae29;
+      }
+
+      input[type="email"] {
+        background-color: #27c2e3;
+      }
+      input[name="fullname"] {
+        background-color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-link="google.com">google.com</div>
+
+    <div data-link="http:\\vnexpress.vn">facebook.com</div>
+
+    <div data-name="hello">hello</div>
+
+    <div data-name="againhello">again hello</div>
+
+    <input type="email" name="email" />
+
+    <input type="text" name="fullname" />
+  </body>
+</html>
