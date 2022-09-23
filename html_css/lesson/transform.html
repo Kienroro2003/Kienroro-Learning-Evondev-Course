@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assert/css/reset.css" />
+    <link rel="stylesheet" href="./assert/css/global.css" />
+    <title>Transform</title>
+    <style>
+      .box {
+        width: 10rem;
+        height: 10rem;
+        background: tomato;
+      }
+      .boxes {
+        margin-top: 20rem;
+        display: flex;
+        justify-content: space-between;
+      }
+      .x {
+        transform: rotateX(45deg);
+      }
+
+      .y {
+        transform: rotateY(45deg);
+      }
+      .z {
+        transform: rotateZ(45deg);
+      }
+
+      .box__translate {
+        width: 20rem;
+        height: 20rem;
+        position: relative;
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+      }
+
+      .box__bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 2rem;
+        background-color: #EB344F;
+        transform: translateY(100%);
+        transition:transform 0.5s;
+      }
+
+      .box__translate:hover .box__bottom{
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul class="boxes">
+        <li>
+          <div class="box z"></div>
+          <p class="name">RotateZ</p>
+        </li>
+        <li>
+          <div class="box x"></div>
+          <p class="name">RotateX</p>
+        </li>
+        <li>
+          <div class="box y"></div>
+          <p class="name">RotateY</p>
+        </li>
+      </ul>
+      <p class="detail">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+        necessitatibus earum similique perferendis accusamus incidunt sint aut
+        reprehenderit doloremque asperiores quam odio aliquam ab minus optio
+        labore deserunt modi debitis vero, ea ut distinctio illum natus! Illo
+        accusamus esse corrupti, dicta ullam veniam nisi perspiciatis? Ab quo
+        nobis eius aliquam velit, mollitia impedit tempore possimus amet natus
+        blanditiis corrupti ex omnis dolore vel porro reprehenderit, fuga
+        temporibus in iure perspiciatis! Ab velit, nemo animi voluptatem at
+        blanditiis sit nihil dolor alias consequatur! Nesciunt tempore nemo
+        reprehenderit aut culpa. Quam voluptates nobis maiores et, magnam amet
+        beatae vitae quidem officia quibusdam!
+      </p>
+      <h2>Transform translate hover</h2>
+      <div class="box__translate">
+        <div class="box__bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>
