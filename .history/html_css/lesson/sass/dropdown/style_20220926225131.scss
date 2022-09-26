@@ -1,0 +1,17 @@
+$primary-color:#39A4FE;
+
+body {
+  font-size: 1.6rem;
+}
+.dropdown {
+  margin: 5rem auto;
+  &__select {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    background-color: ;
+    .dropdown__icon {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assert/css/reset.css" />
+    <link rel="stylesheet" href="./assert/css/global.css" />
+    <title>Layout</title>
+    <style>
+      .image__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5rem 0 0-3rem;
+      }
+
+      .image__item {
+        flex-basis: calc(25% - 3rem);
+        margin-left: 3rem;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul class="image__list">
+        <li class="image__item">
+          <img
+            src="./assert/images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg"
+            alt=""
+            class="image"
+          />
+        </li>
+        <li class="image__item">
+          <img
+            src="./assert/images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg"
+            alt=""
+            class="image"
+          />
+        </li>
+        <li class="image__item">
+          <img
+            src="./assert/images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg"
+            alt=""
+            class="image"
+          />
+        </li>
+        <li class="image__item">
+          <img
+            src="./assert/images/ilya-p-jgT1sy3UTxE-unsplash.jpg"
+            alt=""
+            class="image"
+          />
+        </li>
+        <li class="image__item">
+          <img
+            src="./assert/images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg"
+            alt=""
+            class="image"
+          />
+        </li>
+        <li class="image__item">
+          <img
+            src="./assert/images/ilya-p-jgT1sy3UTxE-unsplash.jpg"
+            alt=""
+            class="image"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+$primary-color: #39a4fe;
+
+body {
+  font-size: 1.6rem;
+}
+.dropdown {
+  margin: 5rem auto;
+  width: 40rem;
+//   position: relative;
+  &__select {
+    padding: 2rem 2.5rem 2rem 4rem;
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    margin-left: 3.5rem;
+  }
+  &__caret {
+    margin-left: auto;
+  }
+  &__list {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px #e6edf4;
+  }
+  &__item {
+    padding: 2rem 2.5rem 2rem 4rem;
+    display: flex;
+    color: #dfe8ee;
+    align-items: center;
+    &:hover {
+      color: #74809d;
+    }
+    &:not(:last-child){
+        
+    }
+  }
+}
