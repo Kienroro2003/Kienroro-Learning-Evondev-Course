@@ -1,0 +1,13 @@
+.author{
+    max-width: 1000px;
+    margin:2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    &__image{
+        flex-basis: 35%;
+    }
+    &__content{
+        flex-basis: ;
+    }
+}
