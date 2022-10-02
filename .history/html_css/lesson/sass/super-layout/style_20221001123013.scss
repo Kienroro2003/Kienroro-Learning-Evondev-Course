@@ -16,9 +16,9 @@
   height: $height;
 }
 
-@mixin maxWidth($value) {
+@mixin maxWidth($value){
   @media screen and (max-width: $value) {
-    @content;
+    @content
   }
 }
 
@@ -32,8 +32,6 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   align-items: stretch;
-  width: 100rem;
-  margin:0 auto;
   @include flexbox(stretch, space-between);
   &__left,
   &__right {
@@ -50,9 +48,8 @@ body {
     @include size(100%);
     border-radius: 2rem;
     &--small {
-      @include size(15rem, 14rem);
+      @include size(15rem, 10rem);
       margin-right: 1.5rem;
-      object-position: center;
     }
   }
   &__category {
@@ -136,7 +133,3 @@ body {
     max-width: calc(100% - 15rem - 1.5rem);
   }
 }
-@include maxWidth(767px){
-
-}
-

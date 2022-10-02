@@ -16,12 +16,6 @@
   height: $height;
 }
 
-@mixin maxWidth($value) {
-  @media screen and (max-width: $value) {
-    @content;
-  }
-}
-
 body {
   background-color: #f3f3f3;
   padding: 2rem;
@@ -32,8 +26,6 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   align-items: stretch;
-  width: 100rem;
-  margin:0 auto;
   @include flexbox(stretch, space-between);
   &__left,
   &__right {
@@ -50,9 +42,8 @@ body {
     @include size(100%);
     border-radius: 2rem;
     &--small {
-      @include size(15rem, 14rem);
+      @include size(15rem, 10rem);
       margin-right: 1.5rem;
-      object-position: center;
     }
   }
   &__category {
@@ -108,10 +99,8 @@ body {
     font-size: 32px;
     margin-bottom: 2rem;
     line-height: 3.2rem;
-    &--small {
+    &--small{
       font-size: 1.4rem;
-      line-height: 1.4rem;
-      margin-bottom: 0;
     }
   }
   &__desc {
@@ -125,18 +114,8 @@ body {
   }
   &__item {
     @include flexbox(center);
-
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #eee;
-    }
   }
-  &__content {
+  &__content{
     max-width: calc(100% - 15rem - 1.5rem);
   }
 }
-@include maxWidth(767px){
-
-}
-
