@@ -48,11 +48,9 @@
   margin-top: 10rem;
   &__input {
       display: none;
-      &:checked + .radio__label::before {
-        // visibility: visible;
-        // opacity: 1;
-        background-color: tomato;
-        box-shadow: 0 0 0 5px white, 0 0 0 7px tomato;
+      &:checked + .checkbox__label::after {
+        visibility: visible;
+        opacity: 1;
       }
     }
   &__label {
@@ -70,10 +68,8 @@
       transform: translateY(-50%);
       background-color: #eff1f5;
       box-shadow: 0 0 0 5px #eff1f5, 0 0 0 7px #b5bec9;
-      transition: all 0.2s linear;
       z-index: 2;
-    //   visibility: hidden;
-    //   opacity: 0;
+      vi
     }
   }
 }

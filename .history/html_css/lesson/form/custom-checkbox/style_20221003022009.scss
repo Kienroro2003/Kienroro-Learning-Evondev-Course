@@ -1,0 +1,35 @@
+@use '../../assert/sass/global.scss' as g;
+
+.checkbox {
+  margin-top: 10rem;
+  &__input{
+    display: none;
+  }
+  &__label {
+    position: relative;
+    padding-left: 5rem;
+    &::before {
+      content: "";
+      position: absolute;
+      @include g.size(4rem);
+      border-radius: 10px;
+    //   width: 5rem;
+    //   height: 5rem;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: tomato;
+      z-index: 2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        @include g.size(2rem,1rem);
+        top:50%;
+        left: 1.5rem;
+        transform: rotateZ(-45deg) translateY(-50%);
+        background-color: #fff;
+        z-index: 3;
+    }
+  }
+}

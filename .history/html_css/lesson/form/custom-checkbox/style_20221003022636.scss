@@ -6,7 +6,7 @@
     display: none;
     &:checked + .checkbox__label::after {
       visibility: visible;
-      opacity: 1;
+      transition: visibility 1s linear;
     }
   }
   &__label {
@@ -38,42 +38,8 @@
       border-bottom: 3px solid white;
       border-left: 3px solid white;
       visibility: hidden;
-      opacity: 0;
-      transition: all 0.2s linear;
-    }
-  }
-}
-
-.radio {
-  margin-top: 10rem;
-  &__input {
-      display: none;
-      &:checked + .radio__label::before {
-        // visibility: visible;
-        // opacity: 1;
-        background-color: tomato;
-        box-shadow: 0 0 0 5px white, 0 0 0 7px tomato;
-      }
-    }
-  &__label {
-    position: relative;
-    padding-left: 5rem;
-    cursor: pointer;
-    user-select: none;
-    &::before {
-      content: "";
-      position: absolute;
-      @include g.size(1rem);
-      border-radius: 50%;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      background-color: #eff1f5;
-      box-shadow: 0 0 0 5px #eff1f5, 0 0 0 7px #b5bec9;
-      transition: all 0.2s linear;
-      z-index: 2;
-    //   visibility: hidden;
-    //   opacity: 0;
+      op
+      transition: visibility 1s linear;
     }
   }
 }
