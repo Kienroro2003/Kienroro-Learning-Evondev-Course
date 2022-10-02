@@ -1,0 +1,8 @@
+.header {
+  &-top {
+    color: red;
+    &:hover {
+      color: orange;
+    }
+  }
+}

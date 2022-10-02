@@ -1,0 +1,32 @@
+.author {
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fcfbfb;
+  &__image {
+    width: 35%;
+    height: 30rem;
+    object-fit: cover;
+    display: inline-block;
+  }
+  &__content {
+    flex-basis: 65%;
+    padding: 3rem 2rem;
+  }
+  &__name {
+    color: #302f4d;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__desc{
+    color:#B5B5B5;
+    font-size: 12px;
+  }
+  &__contact{
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

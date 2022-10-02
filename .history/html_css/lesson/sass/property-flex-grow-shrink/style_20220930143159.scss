@@ -1,0 +1,40 @@
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+/*
+khi su display: flex
+thì mặc định các phần tử có property: flex-shrink: 1 và flex-grow: 0
+*/
+
+.post {
+  padding: 2rem;
+  margin: 5rem auto;
+  max-width: 40rem;
+  background-color: white;
+  border-radius: 2rem;
+  @include flexbox(center);
+  &__media {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    // flex-shrink: 0;
+    overflow: hidden;
+  }
+  &__content {
+    width: calc(100%-10rem);
+  }
+}

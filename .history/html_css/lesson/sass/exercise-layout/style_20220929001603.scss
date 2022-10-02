@@ -1,0 +1,8 @@
+@mixin flexbox($align: flex-start, $j)
+
+
+.post{
+    &__list{
+        padding:1rem
+    }
+}

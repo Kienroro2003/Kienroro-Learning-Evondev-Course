@@ -1,0 +1,14 @@
+body {
+  font-size: 1.6rem;
+}
+.dropdown {
+  margin: 5rem auto;
+  &__select {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    .dropdown__icon {
+      color: red;
+    }
+  }
+}

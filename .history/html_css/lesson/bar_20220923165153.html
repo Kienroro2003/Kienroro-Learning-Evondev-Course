@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assert/css/reset.css" />
+    <link rel="stylesheet" href="./assert/css/global.css" />
+    <title>Bar</title>
+    <style>
+      .bar {
+        margin-top: 20rem;
+      }
+
+      .bar__progress {
+        width: 50rem;
+        height: 1rem;
+        border-radius: 9999px;
+        background: green;
+        border: 1px solid #888888;
+        position: relative;
+      }
+
+      .bar__circle{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bar">
+        <div class="bar__progress"></div>
+        <div class="bar__circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

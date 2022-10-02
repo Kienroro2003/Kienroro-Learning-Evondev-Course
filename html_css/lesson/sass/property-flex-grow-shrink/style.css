@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body {
+  background-color: #f3f3f3;
+}
+
+/*
+khi su display: flex
+thì mặc định các phần tử có property: flex-shrink: 1 và flex-grow: 0
+*/
+.post {
+  padding: 2rem;
+  margin: 5rem auto;
+  max-width: 40rem;
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.post__media {
+  flex: 1 1 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.post__content {
+  flex: 1 1 calc(100% - 10rem);
+}
+
+/*# sourceMappingURL=style.css.map */

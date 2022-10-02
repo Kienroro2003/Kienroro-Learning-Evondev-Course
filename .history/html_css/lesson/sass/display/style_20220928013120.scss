@@ -1,0 +1,51 @@
+$green-color: #08c899;
+$blue-dark-color: #0f1340;
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.work {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $blue-dark-color;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      @include size(3rem, 0.6rem);
+      background-color: $green-color;
+      border-radius: 4px;
+    }
+  }
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-tab {
+    display: flex;
+    &__item {
+      padding: 1.5rem;
+      background-color: white;
+      color: white;
+      border-radius: 99px 0 99px 99px;
+      margin-right: 2rem;
+      border: 1px solid $green-color;
+      color:$green-color;
+      &:hover{
+        color:white;
+        
+      }
+    }
+  }
+}

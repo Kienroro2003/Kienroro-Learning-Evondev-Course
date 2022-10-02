@@ -1,0 +1,22 @@
+$green-color: #08c899;
+$blue-dark-color: #0f1340;
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.work {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $blue-dark-color;
+    position
+    &::before {
+
+    }
+  }
+}

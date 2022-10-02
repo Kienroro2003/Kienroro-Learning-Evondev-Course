@@ -1,0 +1,23 @@
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+
+.post {
+  &__list {
+    padding: 2rem;
+    @include flexbox();
+    margin-left: 2rem;
+  }
+  &__item{
+    
+  }
+}

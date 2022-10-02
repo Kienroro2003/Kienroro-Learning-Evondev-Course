@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assert/css/reset.css">
+    <link rel="stylesheet" href="./assert/css/global.css">
+    <title>Circles loading</title>
+    <style>
+        .circles{
+            margin:10rem 0;
+            text-align: center;
+        }
+
+        .circle-item{
+            width: 3rem;
+            height: 3rem;
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid tomato;
+        }
+
+        @keyframes loading {
+            from{
+                transform: rotateZ(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circles">
+            <div class="circle-item"></div>
+            <div class="circle-item"></div>
+        </div>
+    </div>
+</body>
+</html>

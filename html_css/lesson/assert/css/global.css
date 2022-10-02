@@ -1,4 +1,35 @@
+<<<<<<< HEAD
 .wrapper{
     width:960px;
     margin:0 auto;
 }
+
+=======
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+>>>>>>> 0195f6d8b31c329aa9fdaa001f2f4d69b1d3c660
