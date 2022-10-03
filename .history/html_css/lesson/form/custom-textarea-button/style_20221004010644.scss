@@ -1,0 +1,27 @@
+@use "../../assert/sass/global.scss" as g;
+
+.text {
+  margin: 10rem 10rem;
+  &__input {
+    padding: 2rem;
+    border-radius: 4px;
+    border: 1px solid #b4bec8;
+    color: #0d1d35;
+    width: 100%;
+    outline: none; 
+    font-size: 1.6rem;
+    transition: all 0.25s linear;
+    &::-webkit-input-placeholder{
+      color: #b7c1cb;
+    }
+    &:focus{
+      border-color:#ff695a;
+      box-shadow: 0 0 10px 4px #ffe1de;
+    }
+  }
+}
+
+.button__style{
+  margin:10rem 10rem;
+  width: 100%;
+}

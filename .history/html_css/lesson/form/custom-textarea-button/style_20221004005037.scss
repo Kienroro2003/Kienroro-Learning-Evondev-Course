@@ -1,0 +1,13 @@
+@use "../../assert/sass/global.scss" as g;
+
+.text {
+  margin-top: 10rem;
+  &__input {
+    padding: 2rem;
+    border-radius: 4px;
+    border: 1px solid #b4bec8;
+    color: #0d1d35;
+    width: 100%;
+    outline: none;
+  }
+}

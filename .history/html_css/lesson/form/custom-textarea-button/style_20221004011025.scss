@@ -8,43 +8,31 @@
     border: 1px solid #b4bec8;
     color: #0d1d35;
     width: 100%;
-    outline: none;
+    outline: none; 
     font-size: 1.6rem;
     transition: all 0.25s linear;
-    &::-webkit-input-placeholder {
+    &::-webkit-input-placeholder{
       color: #b7c1cb;
     }
-    &:focus {
-      border-color: #ff695a;
+    &:focus{
+      border-color:#ff695a;
       box-shadow: 0 0 10px 4px #ffe1de;
     }
   }
 }
 
-.button {
-  margin: 10rem 10rem;
-  &__style {
+.button{
+  margin:10rem 10rem;
+  &__style{
     width: 100%;
-    padding: 2rem 0;
+    padding:2rem 0;
     outline: none;
     border: none;
     user-select: none;
     font-size: 1.8rem;
-    line-height: 1.8;
-    color: white;
+    li
+    color:white;
     background-image: linear-gradient(45deg, #fd6764, #fc607d);
     border-radius: 2rem;
-    transition: all 0.25s linear;
-    box-shadow: 0 10px 10px 0px #ddd5d6;
-    &:hover {
-      background-image: none;
-      background-color: #ffeff2;
-      color: #fc5d7b;
-    }
-    &:active {
-      transform: translateY(5px);
-      box-shadow: 0 5px 10px 0 #ddd5d6;
-    }
-    // box-shadow: 0 10px 0 0 black;
   }
 }

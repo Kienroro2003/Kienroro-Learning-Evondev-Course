@@ -1,11 +1,49 @@
 .text {
-  margin-top: 10rem;
+  margin: 10rem 10rem;
 }
 .text__input {
   padding: 2rem;
   border-radius: 4px;
   border: 1px solid #b4bec8;
   color: #0d1d35;
+  width: 100%;
+  outline: none;
+  font-size: 1.6rem;
+  transition: all 0.25s linear;
+}
+.text__input::-webkit-input-placeholder {
+  color: #b7c1cb;
+}
+.text__input:focus {
+  border-color: #ff695a;
+  box-shadow: 0 0 10px 4px #ffe1de;
+}
+
+.button {
+  margin: 10rem 10rem;
+}
+.button__style {
+  width: 100%;
+  padding: 2rem 0;
+  outline: none;
+  border: none;
+  user-select: none;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: white;
+  background-image: linear-gradient(45deg, #fd6764, #fc607d);
+  border-radius: 2rem;
+  transition: all 0.25s linear;
+  box-shadow: 0 10px 10px 0px #ddd5d6;
+}
+.button__style:hover {
+  background-image: none;
+  background-color: #ffeff2;
+  color: #fc5d7b;
+}
+.button__style:active {
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px 0 #ddd5d6;
 }
 
 /*# sourceMappingURL=style.css.map */

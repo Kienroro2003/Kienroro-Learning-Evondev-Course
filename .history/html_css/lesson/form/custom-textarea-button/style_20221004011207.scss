@@ -34,16 +34,8 @@
     color: white;
     background-image: linear-gradient(45deg, #fd6764, #fc607d);
     border-radius: 2rem;
-    transition: all 0.25s linear;
-    box-shadow: 0 10px 10px 0px #ddd5d6;
     &:hover {
-      background-image: none;
       background-color: #ffeff2;
-      color: #fc5d7b;
-    }
-    &:active {
-      transform: translateY(5px);
-      box-shadow: 0 5px 10px 0 #ddd5d6;
     }
     // box-shadow: 0 10px 0 0 black;
   }
