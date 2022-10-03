@@ -1,0 +1,17 @@
+@use "../../assert/sass/global.scss" as g;
+
+.file {
+  margin-top: 10rem;
+  @include g.size(10rem);
+  border-radius: 20px;
+  border: 1px solid tomato;
+  background-color: rgba(255, 99, 71, 0.5);
+  position: relative;
+  &__label {
+    @include g.flexbox(center, center);
+    position: absolute;
+    top:0;
+    right:0;
+    bo
+  }
+}

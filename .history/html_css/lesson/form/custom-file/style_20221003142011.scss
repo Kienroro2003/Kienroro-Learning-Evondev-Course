@@ -1,0 +1,6 @@
+@use "../../assert/sass/global.scss" as g;
+
+.file{
+  margin-top: 10rem;
+  @include g.size()
+}

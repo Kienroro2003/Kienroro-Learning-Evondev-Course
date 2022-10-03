@@ -1,0 +1,32 @@
+.checkbox {
+  margin-top: 10rem;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__input:checked + .checkbox__label {
+  background-color: #7f6cfa;
+}
+.checkbox__input:checked + .checkbox__label .checkbox__spin {
+  transform: translateX(5rem);
+}
+.checkbox__label {
+  display: inline-block;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 5rem;
+  background-color: #ccc;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+  transition: all 0.2s linear;
+}
+.checkbox__spin {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.2s linear;
+}
+
+/*# sourceMappingURL=style.css.map */

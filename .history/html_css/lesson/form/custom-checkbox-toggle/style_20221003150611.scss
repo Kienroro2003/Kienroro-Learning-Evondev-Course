@@ -1,0 +1,27 @@
+@use "../../assert/sass/global.scss" as g;
+
+.checkbox {
+  margin-top: 10rem;
+  &__input{
+    display: none;
+    &:checked + .checkbox__label{
+      .checkbox__spin{
+        transform: translateX(5rem);
+      }
+    }
+  }
+  &__label {
+    display: inline-block;
+    @include g.size(10rem, 5rem);
+    border-radius: 5rem;
+    background-color: #ccc;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+  }
+  &__spin {
+    @include g.size(4rem);
+    border-radius: 50%;
+    background-color: tomato;
+  }
+}

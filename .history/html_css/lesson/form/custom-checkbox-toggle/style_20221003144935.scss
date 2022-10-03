@@ -1,0 +1,9 @@
+@use "../../assert/sass/global.scss" as g;
+
+.checkbox {
+  &__label{
+    display: inline-block;
+    @include g.size(10rem,5rem);
+    
+  }
+}
