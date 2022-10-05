@@ -1,0 +1,47 @@
+@use "../../assert/sass/global.scss" as g;
+
+body {
+  background-color: #dadfed;
+  // background-color: tomato;
+  padding: 5rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.signup {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  @include g.flexbox(stretch, space-between);
+  box-shadow: 10px 10px 10px 5px #b1b8ca;
+  &__content {
+    width: 50%;
+    padding: 10rem;
+  }
+  &__heading {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #271665;
+    margin-bottom: 3rem;
+  }
+  &__caption {
+    font-size: 12px;
+    font-weight: bold;
+    color: #f85960;
+    position: relative;
+    
+  }
+  &__image {
+    width: 50%;
+    object-fit: cover;
+    text-align: end;
+    img {
+      display: inline-block;
+      object-position: top;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+}

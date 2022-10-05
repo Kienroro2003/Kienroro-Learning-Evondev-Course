@@ -1,0 +1,12 @@
+@use "../../assert/sass/global.scss" as g;
+
+body {
+  background-color: #fcfcfe;
+  padding:10rem;
+  width: 100vh;
+  height: 100vh;
+}
+
+.signup{
+  background-color: white;
+}

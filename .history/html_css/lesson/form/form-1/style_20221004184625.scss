@@ -1,0 +1,23 @@
+@use "../../assert/sass/global.scss" as g;
+
+body {
+  // background-color: #fcfcfe;
+  background-color: tomato;
+  padding: 10rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.signup {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  @include g.flexbox(stretch, space-between);
+  &__content{
+    width: 50%;
+    padding:10rem;
+  }
+  &__image{
+    width: 50%;
+  }
+}

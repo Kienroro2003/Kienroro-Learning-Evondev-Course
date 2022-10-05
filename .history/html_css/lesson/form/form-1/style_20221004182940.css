@@ -1,0 +1,15 @@
+body {
+  background-color: #E6EAF3;
+  padding: 10rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.signup {
+  width: 100;
+  background-color: white;
+  border-radius: 20rem;
+  box-shadow: 0 0 10px 10px ;
+}
+
+/*# sourceMappingURL=style.css.map */
