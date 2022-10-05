@@ -88,14 +88,9 @@ body {
       border-radius: 10px;
       display: block;
       width: 100%;
-      transition:all 0.25s linear;
       &:focus{
         background-color: white;
         border-color:$primary;
-        & + .signup-form__check{
-          background-color:$primary;
-          color:white;
-        }
       }
     }
     &__row {
@@ -163,7 +158,6 @@ body {
       right: 2rem;
       top: 50%;
       transform: translateY(-50%);
-      transition:all 0.25s linear;
     }
   }
   &__already {

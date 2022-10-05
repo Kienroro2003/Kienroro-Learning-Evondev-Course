@@ -88,15 +88,6 @@ body {
       border-radius: 10px;
       display: block;
       width: 100%;
-      transition:all 0.25s linear;
-      &:focus{
-        background-color: white;
-        border-color:$primary;
-        & + .signup-form__check{
-          background-color:$primary;
-          color:white;
-        }
-      }
     }
     &__row {
       @include g.flexbox(stretch, space-between);
@@ -147,9 +138,7 @@ body {
     }
     &__validate {
       position: relative;
-      .signup-form__input{
-        padding-right: 6rem;
-      }
+      .for
     }
     &__check {
       @include g.size(3rem);
@@ -163,7 +152,6 @@ body {
       right: 2rem;
       top: 50%;
       transform: translateY(-50%);
-      transition:all 0.25s linear;
     }
   }
   &__already {
