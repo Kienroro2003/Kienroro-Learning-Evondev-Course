@@ -1,4 +1,3 @@
-
 @mixin flexbox(
   $align: flex-start,
   $justify: flex-start,
@@ -23,7 +22,6 @@
   }
 }
 
-@mixin responsiveMedia($x, $y) {
-  $bottom: unquote($y / $x * 100 + "%");
-  padding-bottom: $bottom;
+@mixin responsiveMedia($x, $y){
+  $bottom: ($y / $x) * 100 + "%";
 }

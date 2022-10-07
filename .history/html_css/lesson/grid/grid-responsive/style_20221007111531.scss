@@ -1,0 +1,11 @@
+@use "../../assert/sass/global.scss" as g;
+
+.icon{
+  width: 100px;
+  height:100px;
+  background-color: red;
+  display:grid;
+  // align-items: center;
+  // justify-content: center;
+  place-items: center;
+}

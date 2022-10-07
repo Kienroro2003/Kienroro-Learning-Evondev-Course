@@ -1,0 +1,9 @@
+@use "../../assert/sass/global.scss" as g;
+
+
+.responsive-video{
+  position: relative;
+  height: 0;
+  padding-bottom: calc((9/16)*100%);
+
+}
