@@ -1,0 +1,38 @@
+@use "../../assert/sass/global.scss" as g;
+
+.icon{
+  width: 100px;
+  height:100px;
+  background-color: red;
+  display:grid;
+  // align-items: center;
+  // justify-content: center;
+  place-items: center;
+}
+
+.grid-layout div{
+  padding: 50px;
+  color:white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.header{
+  background-color: black;
+}
+
+.menu{
+  background-color: black;
+}
+.header{
+  background-color: black;
+}
+.header{
+  background-color: black;
+}
+.header{
+  background-color: black;
+}
+.header{
+  background-color: black;
+}

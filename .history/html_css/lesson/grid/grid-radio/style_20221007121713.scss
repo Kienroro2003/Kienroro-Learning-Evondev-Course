@@ -1,0 +1,22 @@
+@use "../../assert/sass/global.scss" as g;
+
+// body{
+//   width: 100rem;
+// }
+
+:root {
+  --video-ratio: 9/16;
+}
+
+.responsive-video {
+  position: relative;
+  height: 0;
+  // padding-bottom: calc(var(--video-ratio) * 100%);
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
