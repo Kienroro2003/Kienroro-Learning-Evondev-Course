@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border linear gradient</title>
+    <style>
+      .boxed {
+        width: 10rem;
+        height: 4rem;
+        /* cách thứ 1: sử dụng thuộct tính border-image
+        hạn chế của cách này là không sử dụng border-radius được!
+        */
+        /* border: 10px solid orange;
+        border-image-source: linear-gradient(to right bottom, tomato, blue);
+        border-image-slice: 1; */
+
+        /* cách thứ 2: sử dụng thuộc tính box-shadow */
+        border-radius: 20px;
+        box-shadow: -2 -2 0 10 tomato, 2 2 0 10x
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxed"></div>
+  </body>
+</html>
