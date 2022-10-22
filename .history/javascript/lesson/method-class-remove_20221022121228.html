@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classList remove</title>
+    <style>
+      .container {
+        width: 960px;
+        min-height: 1000px;
+        margin: 0 auto;
+      }
+      .is-active {
+        color: aqua;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        quibusdam fugit distinctio aut, nesciunt voluptatum sapiente voluptates
+        fugiat nostrum, ut, rem molestiae. Veniam dolor ea iusto debitis
+        temporibus voluptates a. Consequatur aperiam harum quam labore veniam,
+        ut error possimus eos cumque repellat totam itaque! Magni iure dolorem
+        autem quisquam voluptates.
+      </p>
+      <button onclick="doSomeAction()">Click remove</button>
+    </div>
+
+    <script>
+      function doSomeAction() {
+        const container = document.querySelector("div");
+        container.classList.remove("container");
+        container.classList.add
+      }
+    </script>
+  </body>
+</html>
