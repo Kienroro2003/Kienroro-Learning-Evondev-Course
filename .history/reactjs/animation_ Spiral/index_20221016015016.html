@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiral</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background: #000;
+            height: 100vh;
+            overflow: hidden;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            perspective: 1000px;
+        }
+        div{
+            transform-style: preserve-3d;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        #ui{
+            transform: rotateX(75deg);
+        }
+
+        #ui .bg{
+            width: 480px;
+            height: 480px;
+            background-color: #fff;
+            transform: translate(-50%,-50%) translateZ(-1px);
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <div class="bg"></div>
+        <div class="rings">
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+            <div class="ring">
+                <div class="border"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@use "../../assert/sass/global.scss" as g;
+
+.custom-checkbox{
+    &-inmput{
+        display:none;
+    }
+}

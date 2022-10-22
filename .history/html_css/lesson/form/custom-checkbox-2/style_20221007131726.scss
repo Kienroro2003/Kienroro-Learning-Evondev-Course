@@ -1,0 +1,16 @@
+@use "../../assert/sass/global.scss" as g;
+
+.custom-checkbox{
+    &-input{
+        display:none;
+    }
+    &-label{
+        font-family: "Poppins";
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &-box{
+        @include g.size()
+    }
+}

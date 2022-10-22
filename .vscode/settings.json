@@ -1,3 +1,4 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "livePreview.defaultPreviewPath": "/Applications/XAMPP/xamppfiles/htdocs/Evondev/html_css/project/html-css-master/index.html"
 }

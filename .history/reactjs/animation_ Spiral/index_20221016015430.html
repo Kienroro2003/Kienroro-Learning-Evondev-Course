@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiral</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: #000;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 1000px;
+      }
+      div {
+        transform-style: preserve-3d;
+        position: absolute;
+        backface-visibility: hidden;
+      }
+      #ui {
+        transform: rotateX(75deg);
+      }
+
+      #ui .bg {
+        width: 480px;
+        height: 480px;
+        background-color: #fff;
+        transform: translate(-50%, -50%) translateZ(-1px);
+        border-radius: 50%;
+      }
+      #ui .rings .ring {
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+      }
+      #ui .rings .ring:nth-child(1) {
+        width: 60px;
+        height: 60px;
+        background-color: #000;
+        animation: rotation 3439ms -4000ms linear infinite;
+      }
+      #ui .rings .ring:nth-child(2) {
+        width: 120px;
+        height: 120px;
+        background-color: #000;
+        animation: rotation 2730ms -4000ms linear infinite;
+      }
+      #ui .rings .ring:nth-child(3) {
+        width: 180px;
+        height: 60px;
+        background-color: #000;
+        animation: rotation 3439ms -4000ms linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ui">
+      <div class="bg"></div>
+      <div class="rings">
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
