@@ -14,24 +14,19 @@
         right: 0;
         width: 300px;
         box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0px;
-        transform: translateX(100%);
-        transition: all 0.25s linear;
+      }
+      .menu-item {
       }
       .menu-link {
-        display: block;
+        display:block
         text-decoration: none;
         padding: 8px 20px 16px;
-        color: #333;
-        border-bottom: 1px solid #eee;
-      }
-      .menu.is-show {
-        transition: all 0.25s linear;
-        transform: translateX(0);
+        color:#333;
+        border-bottom:1px solid #333;
       }
     </style>
   </head>
   <body>
-    <button onclick="dosomethink()">Click</button>
     <ul class="menu">
       <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
       <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
@@ -40,11 +35,5 @@
       <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
       <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
     </ul>
-    <script>
-      const menu = document.querySelector(".menu");
-      function dosomethink() {
-        menu.classList.toggle("is-show");
-      }
-    </script>
   </body>
 </html>
