@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing parentElement</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        color: white;
+      }
+      .box-parent {
+        width: 500px;
+        height: 500px;
+        margin: 100px auto;
+        background-color: tomato;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .box-fist{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-parent">
+      <div class="box box-fist">fist</div>
+      <div class="box box-current">current</div>
+      <div class="box box-last">last</div>
+    </div>
+    <script>
+      const child = document.querySelector(".box-child");
+      console.log(child.parentElement);
+    </script>
+  </body>
+</html>

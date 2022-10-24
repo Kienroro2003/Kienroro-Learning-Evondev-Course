@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing Notification</title>
+    <style>
+      .noti {
+        position: fixed;
+        left: 15px;
+        bottom: 15px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 8px;
+        display: flex;
+        max-width: 400px;
+        height: 130px;
+      }
+      .noti-image{
+        border-radius: inherit;
+        flex:30%;
+        display: block;
+      }
+
+      .noti-content{
+        padding:15px;
+        flex:1;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="noti">
+      <img src="https://source.unsplash.com/random" alt="" class="noti-image" />
+      <div class="noti-content">
+        <h3 class="noti-title">Lorem ipsum dolor sit amet.</h3>
+        <p class="noti-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor
+          molestias, cum aspernatur veniam minima quasi dicta quod accusamus
+          voluptate?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

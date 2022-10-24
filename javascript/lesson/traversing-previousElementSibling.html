@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing previousElementSibling</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        color: black;
+      }
+      .box-parent {
+        width: 500px;
+        height: 500px;
+        margin: 100px auto;
+        background-color: tomato;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .box {
+        width: 100px;
+        height: 100%;
+        text-align: center;
+      }
+      .box-fist {
+        background-color: aqua;
+      }
+      .box-current {
+        background-color: rgb(0, 132, 255);
+      }
+      .box-last {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-parent">
+      <div class="box box-fist">previous</div>
+      <div class="box box-current">current</div>
+      <div class="box box-last">last</div>
+    </div>
+    <script>
+      const current = document.querySelector(".box-current");
+      console.log(current.previousElementSibling);
+    </script>
+  </body>
+</html>

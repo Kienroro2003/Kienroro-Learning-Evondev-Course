@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../html_css/lesson/assert/fontawesome/css/all.css"
+    />
+    <title>Traversing</title>
+    <style>
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s linear;
+      }
+      .is-show {
+        opacity: 1;
+        visibility: visible;
+      }
+      .modal-content {
+        max-width: 600px;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+      }
+      .modal-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      .modal-desc {
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.8;
+        margin-bottom: 30px;
+      }
+
+      .modal-action {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 20px;
+      }
+
+      .modal-submit,
+      .modal-cancel {
+        border: 0;
+        font-size: 16px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        color: #999;
+      }
+      .modal-submit {
+        background-color: #3d6ef7;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <i class="fa fa-times modal-close"></i>
+        <p class="modal-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+          porro voluptatibus quia hic temporibus obcaecati asperiores voluptatem
+          veritatis nam nulla culpa, quisquam modi soluta? Beatae facere,
+          eligendi nobis, iusto pariatur quam, magnam obcaecati placeat eum
+          aspernatur labore ad exercitationem aut velit quis eaque debitis cum
+          doloremque repudiandae dolore? A, incidunt.
+        </p>
+        <div class="modal-action">
+          <button class="modal-submit">Confirm</button
+          ><button class="modal-cancel">Close</button>
+        </div>
+      </div>
+    </div>
+    <script>
+        
+    </script>
+  </body>
+</html>
