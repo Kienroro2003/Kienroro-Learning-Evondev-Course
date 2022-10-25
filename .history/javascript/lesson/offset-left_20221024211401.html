@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Offset left</title>
+    <style>
+      /* * {
+        box-sizing: border-box;
+      } */
+      .boxed {
+        width: 500px;
+        height: 500px;
+        background-color: tomato;
+        margin: 100px auto;
+        padding: 20px;
+        border: 10px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxed"></div>
+    <script>
+      const boxed = document.querySelector(".boxed");
+      function log(value) {
+        console.log(value);
+      }
+      log(boxed);
+      //   vị trí của nó so với phía bên trái
+      log(boxed.offsetLeft);
+    </script>
+  </body>
+</html>
