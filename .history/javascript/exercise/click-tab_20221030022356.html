@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      input {
+        line-height: normal;
+      }
+      label,
+      button {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      /* using rem unit */
+      html {
+        font-size: 62.5%;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .tab {
+        width: 50rem;
+        padding: 2.5rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 2rem;
+        display: inline-block;
+      }
+      .tab-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+      .tab-item {
+        cursor: pointer;
+        padding: 1.2rem 2rem;
+        border-radius: 5rem;
+        background-color: #f4f5f7;
+        color: #818e9b;
+        min-width: 100px;
+        text-align: center;
+      }
+      .tab-item:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      .tab-item.active {
+        color: white;
+        background-color: #2979ff;
+        cursor: auto;
+        pointer-events: none;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .post-title {
+        color: #4e4f51;
+        font-weight: 300;
+        line-height: 1.8;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tab">
+      <div class="tab-list">
+        <div class="tab-item active" data-tab="1">Popular</div>
+        <div class="tab-item" data-tab="2">Hot</div>
+        <div class="tab-item" data-tab="3">Latest</div>
+      </div>
+      <div class="tab-wrapper">
+        <div class="tab-content active" data-tab="1">
+          <h3 class="post-title">
+            Amet, dignissimos nisi dolores minus quae impedit quibusdam autem
+            ullam, error consequatur
+          </h3>
+        </div>
+        <div class="tab-content" data-tab="2">
+          <h3 class="post-title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </h3>
+        </div>
+        <div class="tab-content" data-tab="3">
+          <h3 class="post-title">
+            exercitationem repellat deserunt molestias laborum magni
+            voluptatibus reiciendis, fugit adipisci.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      // đầu tiên cần lấy hết các tag
+      const tagList = document.querySelectorAll(".tab-item");
+      // duyệt
+      tagList.forEach((item) => {
+        // thêm sự kiện click cho các item
+        item.addEventListener("click", function () {
+          // xoá bỏ tất cả các active
+          tagList.forEach((item) => item.classList.remove("active"));
+          // thêm active cho tag được click
+          item.classList.add("active");
+          console.log(item.dataset.);
+        });
+      });
+    </script>
+  </body>
+</html>
