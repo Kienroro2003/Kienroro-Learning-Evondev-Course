@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả điện thoại.</title>
+</head>
+<body>
+
+<script>
+    class Mobile {
+        constructor(pin,stat, draftingMessage, messageComes, messageSent) {
+            this.pin = pin;
+            this.draftingMessage = draftingMessage; // tin nhan soan thao
+            this.messageComes = messageComes; //tin nhan den
+            this.messageSent = messageSent; // tin nhan da gui
+        }
+
+        turnOn() {
+            return true;
+        }
+
+        turnOff() {
+            return false;
+        }
+
+        checkStatus(status) {
+            if (status) {
+                document.write("Dien thoai dang bat");
+                this.pin--;
+            } else {
+                document.write("Dien thoai dang tat");
+            }
+        }
+
+        charge() {
+            if (this.pin == 100) {
+                document.write("Dien thoai da day");
+            } else {
+                document.write("Dien thoai dang sac " + this.pin++)
+            }
+        }
+
+        writeMessage() {
+            document.write("Soan tin nhan: ");
+        }
+
+    }
+
+    let result = new Mobile(100, 100, 100, 100);
+
+    result.checkStatus(result.turnOn());
+    result.charge();
+</script>
+</body>
+</html>

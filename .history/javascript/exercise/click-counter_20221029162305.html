@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <title>Click counter</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      input {
+        line-height: normal;
+      }
+      label,
+      button {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      /* using rem unit */
+      html {
+        font-size: 62.5%;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+      }
+      .counter-number {
+        font-size: 100px;
+        margin: 0 10px;
+        color: transparent;
+        background-image: linear-gradient(to right, #00aefd, #ff6bcb);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+      .counter button {
+        width: 40px;
+        height: 40px;
+        background-color: #ccc;
+        border: 0;
+        color: white;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter">
+      <button class="counter-descrease">
+        <i class="fa fa-minus"></i>
+      </button>
+      <h1 class="counter-number">0</h1>
+      <button class="counter-increase">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+  </body>
+  <script>
+    const next = document.querySelector(".counter-increase");
+    const previous = document.querySelector(".counter-descrease");
+    const value = document.querySelector(".counter-number");
+    next.addEventListener("click",addCount);
+    
+    function addCount(event){
+        value.textContent = parseInt(value.innerText) + 1;
+    }
+
+  </script>
+</html>

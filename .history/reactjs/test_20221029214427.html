@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Xây dựng lớp mô tả điện thoại.</title>
+  </head>
+  <body>
+    <script>
+      class Mobile {
+        constructor(
+          pin,
+          status,
+          // , draftingMessage, messageComes, messageSent
+          mobile
+        ) {
+          this.pin = pin;
+          this.draftingMessage = ""; // tin nhan soan thao
+          this.messageComes = []; //tin nhan den
+          this.messageSent = []; // tin nhan da gui
+          this.status = status;
+          this.mobile = mobile;
+        }
+
+        checkStatus(status) {
+          if (status) {
+            document.write("Dien thoai dang bat");
+            this.pin--;
+          } else {
+            document.write("Dien thoai dang tat");
+          }
+        }
+
+        charge() {
+          if (this.pin == 100) {
+            document.write("Dien thoai da day");
+          } else {
+            document.write("Dien thoai dang sac " + this.pin++);
+          }
+        }
+
+        writeMessage() {
+          if(pin>0){
+            this.draftingMessage = prompt("Nhap tin nhan: ");
+          this.messageSent.push(this.draftingMessage);
+          this.mobile.messageComes.push(this.draftingMessage);
+          this.pin--;
+          }else{
+            alert("Het pin roi");
+          }
+        }
+      }
+      seeMessageCome(){
+        for(let message of this.)
+      }
+      let iphone = new Mobile();
+      let android = new Mobile(iphone);
+    </script>
+  </body>
+</html>

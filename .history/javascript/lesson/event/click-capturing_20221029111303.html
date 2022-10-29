@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event click capturing</title>
+    <style>
+      button {
+        width: 300px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        outline: none;
+        border: none;
+        background-color: tomato;
+        margin: 100px auto;
+        display: block;
+      }
+      span {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button><span>Click me!</span></button>
+    <script>
+      const btn = document.querySelector("button");
+      const span = document.querySelector("span");
+      span.addEventListener("click", handleFuction2);
+      btn.addEventListener("click", handleFuction);
+      function log(value) {
+        console.log(value);
+      }
+      function handleFuction() {
+        log("click button");
+      }
+
+      function handleFuction2(event) {
+        // event.stopPropagation();
+        log("click span");
+      }
+    </script>
+  </body>
+</html>
