@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Dropdown</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      input {
+        line-height: normal;
+      }
+      label,
+      button {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      /* using rem unit */
+      html {
+        font-size: 62.5%;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        padding: 25px;
+      }
+      .dropdown{
+        width: 100%;
+        max-width: 500px;
+        margin:50px auto;
+      }
+      .dropdown-select{
+        padding:20px;
+        background-color: tomato;
+        color:white;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="dropdown-select">
+        <span>Title</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div class="dropdown-list">
+        <div class="dropdown-item">item1</div>
+        <div class="dropdown-item">item2</div>
+        <div class="dropdown-item">item3</div>
+      </div>
+    </div>
+  </body>
+</html>

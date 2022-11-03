@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tíc Tắc Toe</title>
+    <style>
+      body {
+        font-size: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Caro căng lão</h3>
+    <p id="carogame"></p>
+    <input type="button" id="change" value="Change" onclick="changeValue();" />
+    <input type="text" id="X" />
+    <input type="text" id="O" />
+    <script>
+      let b = document.getElementById("carogame");
+      let board = [[]];
+      let data = "";
+      let text = "";
+      let area = prompt("Nhập kích thước bàn cờ: ");
+      for (let i = 0; i < area; i++) {
+        text += ".";
+      }
+      for (let i = 0; i < area; i++) {
+        board[i] = text;
+      }
+
+      for (let i = 0; i < area; i++) {
+        data += "<br/>";
+        for (let j = 0; j < area; j++) {
+          data += board[i][j] + "&nbsp;&nbsp;";
+        }
+      }
+
+      data +=
+        "<br>" +
+        `
+          <input
+            type="button"
+            id="change"
+            value="Change"
+            onclick="changeValue();"
+          />
+        `;
+      b.innerHTML = data;
+
+      function changeValue() {
+        let data = "";
+        let x = prompt("X: ");
+        let y = prompt("Y: ");
+        board[x] = board.split("").re
+        console.log(board[x][y]);
+        for (let i = 0; i < area; i++) {
+          data += "</br>";
+          for (let j = 0; j < area; j++) {
+            data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+          }
+        }
+        data +=
+          "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>";
+        b.innerHTML = data;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Click accordion</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      input {
+        line-height: normal;
+      }
+      label,
+      button {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      /* using rem unit */
+      html {
+        font-size: 62.5%;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        padding: 25px;
+      }
+      .accordion {
+        width: 500px;
+        margin-bottom: 25px;
+      }
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 4px 4px 0 0;
+      }
+
+      /* .accordion-header * {
+        pointer-events: none;
+      } */
+
+      .accordion-content {
+        /* display: none; */
+        border-top: 0;
+        color: #333;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.6;
+        background-color: white;
+        height: 0;
+        /* width: 0; */
+        overflow: hidden;
+        transition: all 0.25s linear;
+      }
+      .accordion-header * {
+        pointer-events: none;
+      }
+      .accordion-content.active {
+        height: auto;
+        /* width: 100%; */
+      }
+      .accordion-content-inner {
+        padding: 20px;
+        font-size: 14px;
+        border: 1px solid #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>Welcome to accordion heading 1</span>
+        <i class="fa fa-angle-down icon"></i>
+      </div>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat
+          dolorem sequi, hic ea esse ducimus. Minima reprehenderit ullam,
+          commodi aperiam nostrum excepturi, assumenda blanditiis enim iusto
+          pariatur dignissimos atque?
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>Welcome to accordion heading 2</span>
+        <i class="fa fa-angle-down icon"></i>
+      </div>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat
+          dolorem sequi, hic ea esse ducimus. Minima reprehenderit ullam,
+          commodi aperiam nostrum excepturi, assumenda blanditiis enim iusto
+          pariatur dignissimos atque?
+        </div>
+      </div>
+    </div>
+    <script>
+      const accordion = document.querySelectorAll(".accordion");
+
+      accordion.forEach((item) => {
+        item.addEventListener("click", function (e) {
+          console.log(item.children[1].scrollWidth);
+          item.children[1].style.height = `${item.children[1].scrollHeight}px`;
+          item.children[1].classList.toggle("active");
+          if (!item.children[1].classList.contains("active")) {
+            item.children[1].style.height = "0px";
+          }
+          item.children[0].children[1].classList.toggle("fa-angle-down");
+          item.children[0].children[1].classList.toggle("fa-angle-up");
+        });
+      });
+      const header = document.querySelectorAll(".accordion-header");
+      header.forEach((item) =>
+        item.addEventListener("click", function (e) {
+          e.stopImmediatePropagation();
+          const content = e.target.nextElementSibling;
+          content.classList.toggle("active");
+          const icon = e.target.lastElementChild;
+          icon.toggle("")
+        })
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Click modal</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      input {
+        line-height: normal;
+      }
+      label,
+      button {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      /* using rem unit */
+      html {
+        font-size: 62.5%;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        padding: 25px;
+      }
+      .modal {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transform: translateX(100%); */
+    }
+    /* .modal.active {
+        transform: translateX(0);
+        transition: transform 2s linear;
+      } */
+      .modal-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      .modal-content {
+        background-color: white;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 12px;
+        position: relative;
+        z-index: 10;
+        padding: 30px;
+      }
+      .modal-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 100rem;
+        color: white;
+        background-color: #eee;
+        padding: 5px;
+        transform: translate(50%, -50%);
+      }
+      .modal-main {
+        overscroll-behavior-y: contain;
+      }
+      button {
+        width: 300px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        outline: none;
+        border: none;
+        background-color: tomato;
+        margin: 50px auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <button><span>Click me!</span></button>
+    <!-- <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <span class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </span>
+        <div class="modal-main">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          maiores eligendi deleniti ipsa quae nam sunt quasi nisi, dignissimos
+          eaque aliquam minus. Eius perferendis, voluptates totam iure minus
+          consequuntur est?
+        </div>
+      </div>
+    </div> -->
+    <script>
+      const template = `
+        <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <span class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </span>
+        <div class="modal-main">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          maiores eligendi deleniti ipsa quae nam sunt quasi nisi, dignissimos
+          eaque aliquam minus. Eius perferendis, voluptates totam iure minus
+          consequuntur est?
+        </div>
+      </div>
+    </div>
+        `;
+      const button = document.querySelector("button");
+      button.addEventListener("click", function (e) {
+        const body = document.body;
+        body.insertAdjacentHTML("beforeend", template);
+        const close = document.
+      });
+    </script>
+  </body>
+</html>
