@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip</title>
+    <style>
+      .text {
+        color: #3d6ef7;
+        display: block;
+        font-size: 20px;
+        margin: 150px auto;
+        width: max-content;
+      }
+      .tooltip {
+        position: relative;
+      }
+      .tooltip-text {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -120%);
+        background-color: #3d6ef7;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+      }
+      .tooltip-text::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 100%);
+        border: 10px solid transparent;
+        border-top-color: #3d6ef7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="tooltip">
+      <div class="tooltip-text">Welcome to my tooltip</div>
+      <span class="text">Hello World</span>
+    </div> -->
+    <span class="text" data-tooltip="Welcome to my tooltip">Hello world</span>
+    <script>
+      window.addEventListener("load", function (event) {
+        const text = document.querySelector(".text");
+        text.addEventListener("mouseenter", function (e) {
+          const title = e.target.dataset.tooltip;
+          const tooltipDiv = document.createElement("div");
+          tooltipDiv.className = "tooltip-text";
+          document.
+        });
+      });
+    </script>
+  </body>
+</html>

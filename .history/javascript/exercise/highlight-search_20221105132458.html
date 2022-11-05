@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Highlight search</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      input {
+        line-height: normal;
+      }
+      label,
+      button {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      /* using rem unit */
+      html {
+        font-size: 62.5%;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .dropdown {
+        width: 500px;
+        height: auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin: 50px auto;
+        padding: 15px 20px;
+        border-radius: 20px;
+      }
+      .input-search {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid #eee;
+        font-size: 1.6rem;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+      .dropdown-list {
+        display: flex;
+        flex-direction: column;
+      }
+      .dropdown-item {
+        padding: 10px;
+      }
+      .dropdown-item:hover {
+        background-color: #eee;
+      }
+      .highlight {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <input type="text" class="input-search" />
+      <div class="dropdown-list">
+        <div class="dropdown-item"><span>How to learn English</span></div>
+        <div class="dropdown-item">How to learn Programming</div>
+        <div class="dropdown-item">The best way to learn youtube</div>
+        <div class="dropdown-item">Five ways to study CSS</div>
+        <div class="dropdown-item">fontawesome.com cdn</div>
+      </div>
+    </div>
+    <script>
+      const inputSearch = document.querySelector(".input-search");
+      const items = document.querySelectorAll(".dropdown-item");
+      let filter = "";
+      inputSearch.addEventListener("keypress", function (e) {
+        filter += e.key;
+        console.log(filter);
+        [...items].forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          const index = text.indexOf(filter);
+          console.log(index);
+        });
+      });
+    </script>
+  </body>
+</html>

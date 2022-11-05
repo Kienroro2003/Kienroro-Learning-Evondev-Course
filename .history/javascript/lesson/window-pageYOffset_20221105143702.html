@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window pageYOffset</title>
+    <style>
+      body {
+        height: 500rem;
+      }
+      .box{
+        position:absolute;
+        top:50px;
+        left:50%;
+        wi
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      window.addEventListener(
+        "scroll",
+        debounceFn(function (e) {
+          console.log(window.pageYOffset);
+        }, 50)
+      );
+      function debounceFn(func, wait, immediate) {
+        let timeout;
+        return function () {
+          let context = this,
+            args = arguments;
+          let later = function () {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+          let callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      }
+    </script>
+  </body>
+</html>

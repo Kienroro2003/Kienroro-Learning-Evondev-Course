@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      input {
+        line-height: normal;
+      }
+      label,
+      button {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      /* using rem unit */
+      html {
+        font-size: 62.5%;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        padding: 25px;
+        background-color: #81ecec;
+      }
+      input {
+        padding: 15px;
+        border: 1px solid #eee;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        width: 300px;
+        margin: 50px auto;
+        display: block;
+        border-radius: 99px;
+      }
+      button {
+        padding: 20px;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        background-color: white;
+        border-radius: 99px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" class="name" placeholder="Text" />
+      <input type="text" class="username" placeholder="Text" />
+      <input
+        type="checkbox"
+        class="messageCheckbox"
+        name="hobby"
+        value="game"
+      />
+      <input
+        type="checkbox"
+        class="messageCheckbox"
+        name="hobby"
+        value="shopping"
+      />
+      <input type="radio" name="gender" value="male" />
+      <input type="radio" name="gender" value="female" />
+      <button>Submit</button>
+    </form>
+    <script>
+      //   const input = document.querySelector(".name");
+      //   input.addEventListener("keyup", function (e) {
+      //     console.log(e.key);
+      //   });
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        console.log(this.elements);
+        const checkboxs = [...document.querySelectorAll(".messageCheckbox")].map(element => element.checked?element);
+        console.log(checkbox);
+      });
+      //   const btn = document.querySelector("button");
+      //   btn.addEventListener("click", function (e) {
+      //     e.preventDefault();
+      //     const inputName = document.querySelector(".name");
+      //     const inputUsername = document.querySelector(".username");
+      //     console.log(inputName["value"]);
+      //     console.log(inputUsername["value"]);
+      //   });
+    </script>
+  </body>
+</html>
