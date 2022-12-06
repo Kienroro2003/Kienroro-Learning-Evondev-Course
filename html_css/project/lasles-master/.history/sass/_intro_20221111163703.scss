@@ -1,0 +1,10 @@
+.intro{
+    margin-bottom: 100px;
+    &-container{
+        padding:37px 91px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        box-shadow: 0 42px 100px 0 rgba(13, 16, 37, 0.185);
+    }
+}

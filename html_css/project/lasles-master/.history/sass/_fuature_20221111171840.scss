@@ -1,0 +1,14 @@
+.fuature {
+  &-container {
+    display: flex;
+    gap: 170px;
+    align-items: center;
+  }
+  &-heading {
+    font-weight: 500;
+    color: $heading-color;
+    font-size: 35px;
+    line-height: calc(50 / 35);
+    margin-bottom: 20px;
+  }
+}

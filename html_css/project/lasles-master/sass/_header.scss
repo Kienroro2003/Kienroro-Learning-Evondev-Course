@@ -1,0 +1,39 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-auth {
+    font-weight: 500;
+    display: flex;
+    gap: 0 30px;
+    align-items: center;
+  }
+  &-signin {
+    color: $heading-color;
+    margin-right: 30px;
+  }
+  &-signup {
+    color: $primary-color;
+    padding: 12px 50px;
+    border: 1px solid currentColor;
+    border-radius: 100px;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  &-item + .menu-item {
+    margin-left: 40px;
+  }
+  &-item {
+    color: $text-color;
+  }
+  &-link {
+    color: inherit;
+  }
+}

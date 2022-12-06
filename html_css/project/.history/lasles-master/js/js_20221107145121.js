@@ -1,0 +1,1 @@
+const arrObject = [{ a: 10}]

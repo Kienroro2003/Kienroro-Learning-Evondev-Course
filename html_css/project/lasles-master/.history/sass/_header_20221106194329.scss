@@ -1,0 +1,29 @@
+.header {
+    padding-top:
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-auth {
+    font-weight: 500;
+    color: $heading-color;
+  }
+  &-signin {
+    color: $heading-color;
+  }
+  &-signup {
+    color: $primary-color;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  &-item + .menu-item {
+    margin-left: 40px;
+  }
+  &-item {
+    display: inline-block;
+  }
+}

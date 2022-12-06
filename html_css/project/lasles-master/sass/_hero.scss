@@ -1,0 +1,31 @@
+.hero {
+  margin-bottom: 103px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 40px;
+    color: $heading-color;
+  }
+  &-content {
+    max-width: 555px;
+    width: 100%;
+  }
+  &-desc {
+    font-weight: 400;
+    line-height: calc(30 / 16);
+    color: $text-color;
+    margin-bottom: 50px;
+  }
+  &-heading {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: calc(70 / 50);
+    margin-bottom: 20px;
+  }
+  &-image {
+    img {
+      transform: translateX(150px - 83px);
+    }
+  }
+}

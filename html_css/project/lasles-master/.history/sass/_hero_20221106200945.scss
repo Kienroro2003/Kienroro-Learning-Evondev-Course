@@ -1,0 +1,14 @@
+.hero {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 40px;
+    color: $heading-color;
+    font-weight: 700;
+  }
+  &
+  &-heading {
+    font-size: 50px;
+  }
+}

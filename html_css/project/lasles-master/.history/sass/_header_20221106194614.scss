@@ -1,0 +1,35 @@
+.header {
+  padding-top: 50px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-auth {
+    font-weight: 500;
+    color: $heading-color;
+  }
+  &-signin {
+    color: $heading-color;
+    margin-right: 30px;
+  }
+  &-signup {
+    color: $primary-color;
+    padding: 12px 50px;
+    border: 1px solid currentColor;
+    border-radius: 100px;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  color: $text-color;
+  &-item + .menu-item {
+    margin-left: 40px;
+  }
+  &-item {
+    display: inline-block;
+    color: inherit;
+  }
+}

@@ -1,0 +1,19 @@
+.intro {
+  margin-bottom: 100px;
+  &-container {
+    padding: 37px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 42px 57px 0 rgba(13, 16, 37, 0.06);
+  }
+  &-item {
+    display: flex;
+    gap: 36.5px;
+    padding-left: 91px;
+    flex: 0 0 calc(100% / 3);
+    &:not(:last-child) {
+      border-right: 2px solid #eeeff2;
+    }
+  }
+}

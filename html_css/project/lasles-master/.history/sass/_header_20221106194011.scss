@@ -1,0 +1,21 @@
+.header {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-auth{
+    font-weight: normal;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  &-item + .menu-item {
+    margin-left: 40px;
+  }
+  &-item {
+    display: inline-block;
+  }
+}

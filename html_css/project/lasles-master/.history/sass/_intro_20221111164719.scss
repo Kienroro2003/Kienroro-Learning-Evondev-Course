@@ -1,0 +1,16 @@
+.intro {
+  margin-bottom: 100px;
+  &-container {
+    padding: 37px 91px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 42px 57px 0 rgba(13, 16, 37, 0.06);
+  }
+  &-item {
+    flex: 
+    &:not(:last-child) {
+      border-right: 2px solid #eeeff2;
+    }
+  }
+}
