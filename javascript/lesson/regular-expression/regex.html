@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex</title>
+  </head>
+  <body>
+    <script>
+      const regex = /hello/;
+      const string = "hello Kienroro";
+      console.log(regex.test(string));
+      const str1 = "Welcome to 202222";
+      const str2 = "color or colour";
+      console.log(str1.match(/\d\d\d\d/)[0]);
+      console.log(str1.match(/\d{4,6}/)[0]);
+      console.log(str2.match(/color/));
+      console.log(str2.match(/colou?r/g));
+      const str3 = "My name is Kienroro. Kienroro is a developer";
+      console.log(str3);//My name is Kienroro. Kienroro is a developer
+      console.log(str3.replace(/Kienroro/g, "Kien"));//My name is Kien. Kien is a developer
+    </script>
+  </body>
+</html>

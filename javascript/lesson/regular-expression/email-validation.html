@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+      }
+      img,
+      picture,
+      svg,
+      video {
+        display: block;
+        max-width: 100%;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        outline: none;
+      }
+      body {
+        min-height: 100vh;
+      }
+
+      .input-wrapper {
+        margin: 20px auto;
+        position: relative;
+        width: 300px;
+      }
+
+      .input {
+        width: 100%;
+        background-color: #fff;
+        border: none;
+        border-radius: 100rem;
+        padding: 15px 55px 15px 25px;
+        color: #333;
+        display: block;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .input.valid + .input-icon .fa-check,
+      .input.invalid + .input-icon .fa-times {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
+
+      .input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .input-icon i {
+        width: 20px;
+        height: 20px;
+        color: white;
+        border-radius: 20px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+        transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        position: absolute;
+      }
+
+      .fa-check {
+        background-color: #20e2b2;
+      }
+
+      .fa-times {
+        background-color: #fc5776;
+      }
+    </style>
+    <title>Email validation</title>
+  </head>
+  <body>
+    <div class="input-wrapper">
+      <input type="text" class="input" placeholder="Your emails" />
+      <div class="input-icon">
+        <i class="fa fa-check"></i>
+        <i class="fa fa-times"></i>
+      </div>
+    </div>
+    <script>
+      const inputEmail = document.querySelector(".input");
+      inputEmail.addEventListener("input", function (e) {
+        console.log(e.target.value);
+        const REGEX_EMAIL =
+          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if (REGEX_EMAIL.test(e.target.value)) {
+          inputEmail.classList.add("valid");
+          inputEmail.classList.remove("invalid");
+        } else {
+          inputEmail.classList.remove("valid");
+          inputEmail.classList.add("invalid");
+        }
+      });
+    </script>
+  </body>
+</html>
