@@ -7,7 +7,8 @@
     <title>Window pageYOffset</title>
     <style>
       body {
-        height: 500rem;
+        margin: 0;
+        height: 1000px;
       }
       .box {
         position: absolute;
@@ -26,6 +27,8 @@
       window.addEventListener(
         "scroll",
         debounceFn(function (e) {
+          console.log(window.innerWidth);
+          console.log(window.innerHeight);
           console.log(window.pageYOffset);
         }, 50)
       );

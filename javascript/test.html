@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+      }
+      img,
+      picture,
+      svg,
+      video {
+        display: block;
+        max-width: 100%;
+      }
+      body {
+        min-height: 100vh;
+      }
+      .input__group {
+        width: 500px;
+        padding-top: 100px;
+        height: 200px;
+        margin: 0 auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      input {
+        width: 100%;
+        border: none;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input__group">
+      <input type="text" />
+    </div>
+    <script>
+      const group = document.querySelector(".input__group");
+      const input = document.querySelector("input");
+      group.addEventListener("click", function (event) {
+        if (event.target !== input) {
+            console.log("hello");
+          input.select();
+        }
+      });
+    </script>
+  </body>
+</html>

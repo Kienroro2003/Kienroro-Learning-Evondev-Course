@@ -5,32 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../html_css/lesson/assert/css/reset.css" />
-    <title>Window height</title>
+    <title>Offset parent</title>
     <style>
       * {
         box-sizing: border-box;
       }
       .boxed {
         width: 500px;
-        height: 400px;
+        height: 500px;
         background-color: tomato;
         margin: 100px auto;
         padding: 20px;
-        border: 0 solid black;
-        border-width: 40px 30px 20px 10px;
+        border: 10px solid black;
       }
     </style>
   </head>
   <body>
     <div class="boxed"></div>
     <script>
+      const boxed = document.querySelector(".boxed");
       function log(value) {
         console.log(value);
       }
-      //inner height là phần hiển thị trên website returned number
-      log(window.innerHeight);
-      //outer height là phần hiển thị của thiết bị returned number
-      log(window.outerHeight);
+    //   log(boxed);
+      //   vị trí của nó so với phía bên trái (tự động làm tròn theo Math.round)
+      log(boxed.offsetParent.offsetTop);
     </script>
   </body>
 </html>
