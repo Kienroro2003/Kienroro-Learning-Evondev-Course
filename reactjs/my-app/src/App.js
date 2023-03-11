@@ -1,12 +1,30 @@
-import "./App.css";
-// import Counter from "./components/counter/Counter";
-import Game from "./components/tictactoe/Game";
-// import Toggle from "./components/toggle/Toggle";
-// import YoutubeList from "./components/youtube/YoutubeList";
+// import { ThemeProvider } from "styled-components";
+// import "./App.css";
+// import CardList from "./components/card/CardList";
+import { GlobalStyle } from "./GlobalStyle";
+import Header from "./components/Header";
+import Timer from "./components/Timer";
+import Counter from "./components/counter/Counter";
+import HackNews from "./components/news/HackNews";
+// import CardTailwind from "./components/card/CardTailwind";
+import Photos from "./components/photo/Photos";
+
+
 function App() {
+ 
   return (
-    <Game></Game>
-  )
+    <div>
+      {/* <ThemeProvider theme={theme}>
+      </ThemeProvider> */}
+        {/* <GlobalStyle></GlobalStyle> */}
+      {/* <Photos></Photos> */}
+      {/* <Counter></Counter> */}
+      {/* <Timer></Timer> */}
+      {/* <Header></Header> */}
+      {/* <HackNews></HackNews> */}
+      <Counter></Counter>
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bind</title>
+  </head>
+  <body>
+    <button>Click me!</button>
+    <script>
+      const student = {
+        firstName: "Kien",
+        lastName: "roro",
+        fullname: function () {
+          console.log(`${this.firstName}${this.lastName}`);
+        },
+      };
+      const button = document.querySelector("button");
+      Object.prototype.firstName = "Tran";
+      Object.prototype.lastName = "Kien";
+      button.addEventListener("click", student.fullname);
+    </script>
+  </body>
+</html>
